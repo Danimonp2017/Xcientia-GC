@@ -14,6 +14,11 @@ body {
 	font-size:;
 }
 
+.gl-ind {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
 .gl-cont {
 	margin: 0 50px;
 }
