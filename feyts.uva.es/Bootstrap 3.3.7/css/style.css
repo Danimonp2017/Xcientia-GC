@@ -11,8 +11,11 @@
 body {
 	font-family:'Source Sans Pro', sans-serif;
 	line-height:;
-	color:;
 	font-size:;
+}
+
+.gl-cont {
+	margin: 0 50px;
 }
 
 .gl-item {
@@ -28,4 +31,28 @@ body {
 	background-color: rgba(0,0,0,.05);
 	box-shadow: 0 0 30px rgba(82,175,230,1);
 	border: none;
+	color: black;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.gl-cont {
+		margin: 0;
+	}
+	.gl-item {
+		border: none;
+		height: auto;
+		padding: 0 30px;
+	}
+}
+
+/********** Super extra small devices (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
 }
