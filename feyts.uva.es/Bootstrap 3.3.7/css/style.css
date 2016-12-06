@@ -9,22 +9,23 @@
 }
 
 body {
-	font-family:;
+	font-family:'Source Sans Pro', sans-serif;
 	line-height:;
 	color:;
 	font-size:;
 }
 
-#header-nav {
-	background-color: red;
-	border-radius: 0;
-	border: 0;
-	position: relative;
+.gl-item {
+	height: 250px;
+	border: 1px dashed black;
 }
 
+.gl-item + .gl-item {
+	/*border-left: 1px solid black;*/
+}
 
-#nav-list {
-	background-color: red;
-	padding: 0;
-	/*margin: 0;*/
+.gl-item:hover {
+	background-color: rgba(0,0,0,.05);
+	box-shadow: 0 0 30px rgba(82,175,230,1);
+	border: none;
 }
