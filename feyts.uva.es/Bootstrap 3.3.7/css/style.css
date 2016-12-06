@@ -19,6 +19,16 @@ body {
 	margin-bottom: 15px;
 }
 
+form {
+	display: block;
+	width: 230px;
+	margin: 0 auto 25px;
+}
+
+form span {
+	font-weight: 600;
+}
+
 .gl-cont {
 	margin: 0 50px;
 }
