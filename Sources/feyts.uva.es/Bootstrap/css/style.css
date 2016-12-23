@@ -79,6 +79,9 @@ button.text {
 		height: auto;
 		padding: 0 30px;
 	}
+	body {
+		/*font-size: 18px;*/
+	}
 }
 
 /********** Super extra small devices (e.g., iPhone 4) **********/
