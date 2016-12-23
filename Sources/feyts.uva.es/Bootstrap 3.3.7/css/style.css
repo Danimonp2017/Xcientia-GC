@@ -45,9 +45,22 @@ form span {
 .gl-item:hover {
 	background-color: rgba(0,0,0,.05);
 	box-shadow: 0 0 30px rgba(82,175,230,1);
-	border: none;
+	/*border: none;*/
 	color: black;
 }
+
+button.text {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	/*display: none;*/
+}
+
+.gl-item:hover~button.text {
+	
+}
+
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
