@@ -18,7 +18,7 @@ $(document).on("click", ".letter", function() {
 var updateLetter = function (letter) {
 	$("title").html("Glosario Científico - " + letter);
 	$(".current-letter").html(letter.toUpperCase());
-	$("#content").load("/Sources/feyts.uva.es/pa	ges/"+letter+".html");
+	$("#content").load("/Sources/feyts.uva.es/pages/"+letter+".html");
 };
 
 function copyToClipboard(element) {
