@@ -1,11 +1,10 @@
-var currentLetter = ""
+var currentLetter = "";
 
 $(document).ready(function () {
 	updateLetter("a");
 	currentLetter="#a";
 	$("#a").addClass(" active");
 });
-
 
 $(document).on("click", ".letter", function() {
 	var name="#"+this.id+"";
@@ -28,7 +27,3 @@ function copyToClipboard(element) {
 	document.execCommand("copy");
 	$temp.remove();
 };
-
-$(function () {
-	$('[data-toggle="popover"]').popover();
-})
