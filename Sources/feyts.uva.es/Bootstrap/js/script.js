@@ -20,6 +20,7 @@ var updateLetter = function (letter) {
 	$("#content").load("Sources/feyts.uva.es/pages/"+letter+".html");
 };
 
+
 function copyToClipboard(element) {
 	var $temp = $("<input>");
 	$("body").append($temp);
