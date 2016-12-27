@@ -4,6 +4,9 @@ $(document).ready(function () {
 	updateLetter("a");
 	currentLetter="#a";
 	$("#a").addClass(" active");
+	$.get("test.html", "", function (data) {
+		$("#content").append(data);
+	});
 });
 
 $(document).on("click", ".letter", function() {
@@ -18,6 +21,13 @@ var updateLetter = function (letter) {
 	$("title").html("Glosario Científico - " + letter);
 	$(".current-letter").html(letter.toUpperCase());
 	$("#content").load("Sources/feyts.uva.es/pages/"+letter+".html");
+	// $("#content").load("test.html");
+	// $.get("Sources/feyts.uva.es/pages/"+letter+".html", "", function (data) {
+	// 	$("#content").append(data);
+	// });
+	$.get("test.html", "", function (data) {
+		$("#content").append(data);
+	});
 };
 
 

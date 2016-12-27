@@ -1,0 +1,21 @@
+<script>
+	$(function () {
+		$("[data-toggle='popover']").popover();
+		$("[data-toggle='tooltip']").tooltip();
+		
+		$(".btn").hide();
+
+		$(".gl-item").hover(
+
+			function() {
+
+				$(":nth-child(3)",this).show();
+
+			}, 
+			function () {
+
+				$(":nth-child(3)",this).hide();
+
+			});
+	});
+</script>
