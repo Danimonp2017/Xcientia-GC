@@ -1,4 +1,8 @@
 var currentLetter = "";
+// var host = "danielsaavedra.info";
+//
+// if ((host == window.location.host) && (window.location.protocol != "https:"))
+// 		window.location.protocol = "https";
 
 $(document).ready(function () {
 	updateLetter("a");
@@ -29,7 +33,6 @@ var updateLetter = function (letter) {
 		$("#content").append(data);
 	});
 };
-
 
 function copyToClipboard(element) {
 	var $temp = $("<input>");
